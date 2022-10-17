@@ -248,27 +248,26 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -280,9 +279,9 @@
           null,
           1,
           1,
+          null,
           1,
-          0,
-          0,
+          1,
           null,
           0,
           null,
@@ -301,8 +300,17 @@
           1,
           null
         ]
+      },
+      "/Users/turingtjc/Turing/4Module/projects/gtfo-server/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1666036122
+    "timestamp": 1666036422
   }
 }
