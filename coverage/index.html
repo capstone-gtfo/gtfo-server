@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-17T14:42:11-05:00">2022-10-17T14:42:11-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-17T14:48:42-05:00">2022-10-17T14:48:42-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  79.17%
+  77.22%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.81
+         0.78
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>72</b> relevant lines,
-    <span class="green"><b>57</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed. </span>
+    <b>79</b> relevant lines,
+    <span class="green"><b>61</b> lines covered</span> and
+    <span class="red"><b>18</b> lines missed. </span>
     (<span class="red">
-  79.17%
+  77.22%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#996d58be5166322a25c8d6cb64d64951a0b34199" class="src_link" title="app/controllers/api/v1/users_controller.rb">app/controllers/api/v1/users_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
+            <td class="red strong cell--number t-file__coverage">70.00 %</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">0.70</td>
             
           </tr>
         
@@ -278,8 +278,8 @@
   <div class="header">
     <h3>app/controllers/api/v1/users_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  70.0%
 </span>
 
       lines covered
@@ -288,9 +288,9 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>10</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
 
     
@@ -345,8 +345,8 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
             
@@ -356,24 +356,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="missed" data-hits="0" data-linenumber="6">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    if user.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="missed" data-hits="0" data-linenumber="7">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      render json: UserSerializer.new(user), status: :created</code>
           </li>
         </div>
       
@@ -384,18 +384,18 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="missed" data-hits="0" data-linenumber="9">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      render json: user.errors, status: :unprocessable_entity</code>
           </li>
         </div>
       
@@ -406,7 +406,7 @@
 
             
 
-            <code class="ruby">  def user_params</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby">    params.require(:user).permit(:lat, :long, :phone_number)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -428,12 +428,67 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def user_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:lat, :long, :phone)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -609,7 +664,7 @@
 
             
 
-            <code class="ruby">    validates_presence_of :longitude</code>
+            <code class="ruby">    validates_presence_of :long</code>
           </li>
         </div>
       
@@ -620,7 +675,7 @@
 
             
 
-            <code class="ruby">    validates_presence_of :latitude</code>
+            <code class="ruby">    validates_presence_of :lat</code>
           </li>
         </div>
       
@@ -631,7 +686,7 @@
 
             
 
-            <code class="ruby">    validates :phone_number, length: { in: 10..11 }</code>
+            <code class="ruby">    validates :phone, length: { in: 10..11 }</code>
           </li>
         </div>
       
@@ -2981,7 +3036,7 @@
 
             
 
-            <code class="ruby">        &quot;phone_number&quot;: &#39;1234567890&#39;</code>
+            <code class="ruby">        &quot;phone&quot;: &#39;1234567890&#39;</code>
           </li>
         </div>
       
