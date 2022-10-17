@@ -34,4 +34,35 @@ RSpec.describe 'User Requests' do
       expect(attributes).to have_key(:phone)
     end
   end
+
+  describe 'sad path testing' do
+    it 'fails to create a user if info is missing' do
+      user_params = {
+        "long": '-104.9903',
+        "phone": '1234567890'
+      }
+      headers = { content_type: "application/json" }
+      post "/api/v1/users", headers: headers, params: user_params
+
+      user = User.last
+      user_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(user_response).to eq({ error: "Latitude is invalid" })
+    end
+
+    it 'fails to create a user is phone number length is not 10 or 11 digits' do
+      user_params = {
+        "lat": '39.7392',
+        "long": '-104.9903',
+        "phone": '1234234234567890'
+      }
+      headers = { content_type: "application/json" }
+      post "/api/v1/users", headers: headers, params: user_params
+
+      user = User.last
+
+      expect(response).to_not be_successful
+    end
+  end
 end
