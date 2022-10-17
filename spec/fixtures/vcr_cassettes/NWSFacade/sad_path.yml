@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=null&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/problem+json
+      X-Request-Id:
+      - b03c7727-3514-48f6-98b2-92cb5bfe0937
+      X-Correlation-Id:
+      - adc1314c
+      X-Server-Id:
+      - vm-lnx-nids-apiapp9.ncep.noaa.gov
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '425'
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Expires:
+      - Mon, 17 Oct 2022 22:06:58 GMT
+      Date:
+      - Mon, 17 Oct 2022 22:06:58 GMT
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - fd01d8
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "correlationId": "adc1314c",
+            "parameterErrors": [
+                {
+                    "parameter": "query.point",
+                    "message": "Does not match the regex pattern ^(-?\\d+(?:\\.\\d+)?),(-?\\d+(?:\\.\\d+)?)$"
+                }
+            ],
+            "title": "Bad Request",
+            "type": "https://api.weather.gov/problems/BadRequest",
+            "status": 400,
+            "detail": "Bad Request",
+            "instance": "https://api.weather.gov/requests/adc1314c"
+        }
+  recorded_at: Mon, 17 Oct 2022 22:06:58 GMT
+recorded_with: VCR 6.1.0

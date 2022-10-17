@@ -15,5 +15,5 @@ class NWSService
 
     def self.conn
         Faraday.new(url: "https://api.weather.gov") 
-      end
+    end
 end
