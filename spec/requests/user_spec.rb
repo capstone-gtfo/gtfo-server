@@ -61,8 +61,10 @@ RSpec.describe 'User Requests' do
       post "/api/v1/users", headers: headers, params: user_params
 
       user = User.last
+      user_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to_not be_successful
+      expect(user_response).to eq({ error: "Phone number must be 10 characters and all integers" })
     end
   end
 end
