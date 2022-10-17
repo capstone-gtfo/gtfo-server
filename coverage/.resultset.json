@@ -195,7 +195,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -207,6 +207,11 @@
       "/Users/turingtjc/Turing/4Module/projects/gtfo-server/config/routes.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -226,8 +231,66 @@
           1,
           null
         ]
+      },
+      "/Users/turingtjc/Turing/4Module/projects/gtfo-server/spec/requests/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/projects/gtfo-server/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/projects/gtfo-server/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1666029697
+    "timestamp": 1666035731
   }
 }

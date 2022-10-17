@@ -4,13 +4,13 @@ RSpec.describe 'User Requests' do
   describe 'happy path testing' do
     it 'lets you create a user' do
       user_params = {
-        lat: '39.7392',
-        long: '-104.9903',
-        phone_number: '1234567890'
+        "lat": '39.7392',
+        "long": '-104.9903',
+        "phone": '1234567890'
       }
 
       headers = { content_type: "application/json" }
-      post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
+      post "/api/v1/users", headers: headers, params: user_params
 
       user = User.last
 
