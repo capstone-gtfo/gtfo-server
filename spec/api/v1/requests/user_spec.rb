@@ -33,6 +33,17 @@ RSpec.describe 'User Requests' do
       expect(attributes).to have_key(:long)
       expect(attributes).to have_key(:phone)
     end
+
+    it 'lets you send a text' do
+      user_params = {
+        "lat": '39.7392',
+        "long": '-104.9903',
+        "phone": '18043997020'
+      }
+
+      headers = { content_type: "application/json" }
+      post "/api/v1/users", headers: headers, params: user_params
+    end
   end
 
   describe 'sad path testing' do

@@ -9,4 +9,15 @@ class NWSFacade
             end
         end
     end
+
+    def self.retrieve_disaster_sms_signup(location)
+        weather_events = NWSService.get_disaster(location)
+        if weather_events[:features].empty? == false 
+        else
+            events = weather_events[:features].map do |alert|
+                Disaster.new(alert)
+            end
+            Textable.welcome_disaster_sms_response(events)
+        end
+    end
 end
