@@ -8,7 +8,7 @@ module Textable
         )
     end 
 
-    def self.welcome_disaster_sms_response(events, phone_number)
+    def self.disaster_sms_response(events, phone_number)
         client = Twilio::REST::Client.new(ENV['twilio_sid'], ENV['twilio_auth_token'])
         events.each do |event|
             client.messages.create(
