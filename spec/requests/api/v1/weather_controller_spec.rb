@@ -6,20 +6,19 @@ RSpec.describe 'disaster request' do
         
         expect(response).to be_successful
 
-        forecast = JSON.parse(response.body, symbolize_names: true)[:data]
-         
+        forecast = JSON.parse(response.body, symbolize_names: true)
+        
         expect(forecast).to be_a Hash
-
-        expect(forecast[:id]).to eq(nil)
-        expect(forecast[:type]).to eq("forecast")
-        expect(forecast[:attributes]).to have_key(:current_weather)
-        expect(forecast[:attributes]).to have_key(:daily_weather)
-        expect(forecast[:attributes]).to have_key(:hourly_weather)
-
-        expect(forecast[:attributes][:daily_weather].count).to eq(5)
-        expect(forecast[:attributes][:daily_weather]).to be_a Array
-
-        expect(forecast[:attributes][:hourly_weather].count).to eq(8)
-        expect(forecast[:attributes][:hourly_weather]).to be_a Array
+        
+        expect(forecast[:data].first[:id]).to eq(nil)
+        expect(forecast[:data].first[:type]).to eq("Flood Warning")
+        expect(forecast[:data].first[:attributes]).to have_key(:areas)
+        expect(forecast[:data].first[:attributes]).to have_key(:coordinates)
+        expect(forecast[:data].first[:attributes]).to have_key(:type)
+        expect(forecast[:data].first[:attributes]).to have_key(:certainty)
+        expect(forecast[:data].first[:attributes]).to have_key(:severity)
+        expect(forecast[:data].first[:attributes]).to have_key(:urgency)
+        expect(forecast[:data].first[:attributes]).to have_key(:headline)
+        expect(forecast[:data].first[:attributes]).to have_key(:description)
     end
 end

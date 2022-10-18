@@ -23,32 +23,32 @@ http_interactions:
       Content-Type:
       - application/geo+json
       Last-Modified:
-      - Mon, 17 Oct 2022 15:00:00 GMT
+      - Tue, 18 Oct 2022 02:15:23 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Expose-Headers:
       - X-Correlation-Id, X-Request-Id, X-Server-Id
       X-Request-Id:
-      - db866162-d166-4d6c-b926-e7c4d70cef3f
+      - 2a946dc9-2551-4746-9e6d-a5202769c6d1
       X-Correlation-Id:
-      - 3f632bc3
+      - 70c59302
       X-Server-Id:
-      - vm-lnx-nids-apiapp1.ncep.noaa.gov
+      - vm-lnx-nids-apiapp4.ncep.noaa.gov
       Vary:
       - Accept,Feature-Flags,Accept-Language
       - Accept-Encoding
       Cache-Control:
-      - public, max-age=29, s-maxage=30
+      - public, max-age=27, s-maxage=30
       Expires:
-      - Mon, 17 Oct 2022 21:21:07 GMT
+      - Tue, 18 Oct 2022 06:04:10 GMT
       Date:
-      - Mon, 17 Oct 2022 21:20:38 GMT
+      - Tue, 18 Oct 2022 06:03:43 GMT
       Content-Length:
-      - '9738'
+      - '9503'
       Connection:
       - keep-alive
       X-Edge-Request-Id:
-      - 1498a461
+      - 3087dba
       Strict-Transport-Security:
       - max-age=31536000 ; includeSubDomains ; preload
     body:
@@ -66,7 +66,7 @@ http_interactions:
             "type": "FeatureCollection",
             "features": [
                 {
-                    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.30c0f6fafacaad3d6e8bce833a886c2f13d9e6f5.001.1",
+                    "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd4ff7b5442e3279bfd86a449cd181e63e5db0fd.001.1",
                     "type": "Feature",
                     "geometry": {
                         "type": "Polygon",
@@ -96,9 +96,9 @@ http_interactions:
                         ]
                     },
                     "properties": {
-                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.30c0f6fafacaad3d6e8bce833a886c2f13d9e6f5.001.1",
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd4ff7b5442e3279bfd86a449cd181e63e5db0fd.001.1",
                         "@type": "wx:Alert",
-                        "id": "urn:oid:2.49.0.1.840.0.30c0f6fafacaad3d6e8bce833a886c2f13d9e6f5.001.1",
+                        "id": "urn:oid:2.49.0.1.840.0.dd4ff7b5442e3279bfd86a449cd181e63e5db0fd.001.1",
                         "areaDesc": "Lake, FL; Volusia, FL",
                         "geocode": {
                             "SAME": [
@@ -114,21 +114,14 @@ http_interactions:
                             "https://api.weather.gov/zones/county/FLC069",
                             "https://api.weather.gov/zones/county/FLC127"
                         ],
-                        "references": [
-                            {
-                                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.caa87c5d5df1d0205a471cae00805c2684906538.001.1",
-                                "identifier": "urn:oid:2.49.0.1.840.0.caa87c5d5df1d0205a471cae00805c2684906538.001.1",
-                                "sender": "w-nws.webmaster@noaa.gov",
-                                "sent": "2022-10-16T21:56:00-04:00"
-                            }
-                        ],
-                        "sent": "2022-10-17T10:37:00-04:00",
-                        "effective": "2022-10-17T10:37:00-04:00",
-                        "onset": "2022-10-17T10:37:00-04:00",
-                        "expires": "2022-10-17T22:00:00-04:00",
+                        "references": [],
+                        "sent": "2022-10-17T22:15:00-04:00",
+                        "effective": "2022-10-17T22:15:00-04:00",
+                        "onset": "2022-10-17T22:15:00-04:00",
+                        "expires": "2022-10-18T11:00:00-04:00",
                         "ends": null,
                         "status": "Actual",
-                        "messageType": "Update",
+                        "messageType": "Alert",
                         "category": "Met",
                         "severity": "Severe",
                         "certainty": "Observed",
@@ -136,8 +129,8 @@ http_interactions:
                         "event": "Flood Warning",
                         "sender": "w-nws.webmaster@noaa.gov",
                         "senderName": "NWS Melbourne FL",
-                        "headline": "Flood Warning issued October 17 at 10:37AM EDT by NWS Melbourne FL",
-                        "description": "* WHAT...Major flooding is occurring and major flooding is forecast.\nThis approaches the flood of record.\n\n* WHERE...St Johns River Near Deland.\n\n* WHEN...Until further notice.\n\n* IMPACTS...At 5.3 feet, Major flooding occurs to many structures\nand marinas along the river and in the Hontoon Island area.\n\n* ADDITIONAL DETAILS...\n- At 9:30 AM EDT Monday the stage was 6.1 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 9:30 AM EDT Monday was 6.1 feet.\n- Forecast...The river is expected to rise to a crest of 6.1\nfeet this afternoon.\n- Flood stage is 4.0 feet.\n- http://www.weather.gov/safety/flood",
+                        "headline": "Flood Warning issued October 17 at 10:15PM EDT by NWS Melbourne FL",
+                        "description": "* WHAT...Major flooding is occurring and major flooding is forecast.\n\n* WHERE...St Johns River Near Deland.\n\n* WHEN...Until further notice.\n\n* IMPACTS...At 5.3 feet, Major flooding occurs to many structures\nand marinas along the river and in the Hontoon Island area.\n\n* ADDITIONAL DETAILS...\n- At 9:30 PM EDT Monday the stage was 6.0 feet.\n- Recent Activity...The maximum river stage in the 24 hours\nending at 9:30 PM EDT Monday was 6.1 feet.\n- Forecast...The river is expected to fall to 5.5 feet Saturday\nevening.\n- Flood stage is 4.0 feet.\n- http://www.weather.gov/safety/flood",
                         "instruction": null,
                         "response": "Avoid",
                         "parameters": {
@@ -145,7 +138,7 @@ http_interactions:
                                 "FLSMLB"
                             ],
                             "WMOidentifier": [
-                                "WGUS82 KMLB 171437"
+                                "WGUS82 KMLB 180215"
                             ],
                             "NWSheadline": [
                                 "FLOOD WARNING REMAINS IN EFFECT UNTIL FURTHER NOTICE"
@@ -162,14 +155,14 @@ http_interactions:
                                 "/O.CON.KMLB.FL.W.0007.000000T0000Z-000000T0000Z/"
                             ],
                             "expiredReferences": [
-                                "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cae03b9c4cd63d30cfef4a989ebc27607959ad39.001.1,2022-10-16T09:59:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1f63e80e76611d41f1f6bcd70130fcec6691ab29.001.1,2022-10-15T20:57:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.648dc8ed8fda42630039b00bc10d06e2e61c5c5b.001.1,2022-10-15T09:59:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b059acb6b2d81f9f1f97d5701ccfce2619b46499.001.1,2022-10-14T21:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.950039b84e14d2481b6f203926b177d25ee9fc51.001.1,2022-10-14T10:17:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e8433a8526cb7318834262b81b257c07e70cd248.001.1,2022-10-13T21:18:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.998034b1682bcf99e1efe82811883617da4d678a.001.1,2022-10-13T08:57:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.33e93ff090684f428e52f38405cf893a5c2828e4.001.1,2022-10-12T21:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8e230f42b9ab595ba5f350e9b9b4ccfff5855680.001.1,2022-10-12T09:23:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.82604495244d36ed3dcc010c82bd27f2666124b9.001.1,2022-10-11T21:33:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e99b8324f3f9305d92e5d48a357d09fdd767884d.001.1,2022-10-11T09:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.af41ee0da3834506e4ffc43603d010f01013a7fd.001.1,2022-10-10T21:09:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e7948b43bf39ee3dfc7818032ea14ac4e9da763d.001.1,2022-10-10T10:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.99fb2561faf28e7c2f0c81a58484d315bb7a8f51.001.1,2022-10-09T21:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84c3e9b39204154241e035c0ad596fb40aae5cb8.001.1,2022-10-09T10:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9f86a916bcf50042d955842487ed9cd048aefc87.001.1,2022-10-08T22:02:28-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e58e5c27e7b4f90dbed01f89f13591a2ecc21ee8.001.1,2022-10-08T11:24:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ecf165bd66629f7db463d82802352b1be1011ccc.001.1,2022-10-07T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e52eb824ab141059123d831f42b88443370215f8.001.1,2022-10-07T10:48:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.51535d52bdb5ca9f7517becb7a87457ec023feb8.001.1,2022-10-06T21:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.753024c47732e99acf9a150bed0c5d7ec8a3ef16.001.1,2022-10-06T10:16:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1d52ab865ec81e671dba05b6beda4edb054a045e.001.1,2022-10-05T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.806f23badda5c974582168bda3d77935ebf87b1a.001.1,2022-10-05T09:04:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0ef7148e1d5dfb2b4a228a7f37fb5a89e39e3a24.001.1,2022-10-05T09:07:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d0347de831cf12a41a44847fb077661807487b9c.001.1,2022-10-04T22:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.169f5d074761cbbfb4c1769f897e71f63486e6a7.001.1,2022-10-04T09:40:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1ca22e78fd85f379b6330ea38b1d09d94f5c1cb4.001.1,2022-10-03T21:15:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9a95debb4b1f30c8803546461f27bede3d01fe54.001.1,2022-10-03T11:19:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.39483713757044c9be2968021c33ba352ea7b633.001.1,2022-10-02T21:05:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fb1b6ef43cc506ac737152c890117573ef50defe.001.1,2022-10-02T09:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3c28e9fc687c651dd1c99a8d050585decfae28fe.001.1,2022-10-01T20:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4a60d2aa6d8997e9f78aea803367a4c7d4a586f1.001.1,2022-10-01T10:41:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0fbe182f59278bf4d5796b810af5b8eddd043f6d.001.1,2022-09-30T21:45:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.65f797997aa46f0aea23fba18e6db27016a49b98.001.1,2022-09-30T10:45:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.904eec5700f67fa0d319d1cc3fdb62d190a392cf.001.1,2022-09-29T22:08:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a5d0ec7556ab4d95df8ef7de38cb9146893dbc41.001.1,2022-09-29T16:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84a3666c2c0c33069bdfe7ba4ae971b2b0944c5f.001.1,2022-09-29T10:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5cd2b4514e2e65ca6a535ac6485c8d907b603736.001.1,2022-09-29T04:20:00-04:00"
+                                "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.30c0f6fafacaad3d6e8bce833a886c2f13d9e6f5.001.1,2022-10-17T10:37:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.caa87c5d5df1d0205a471cae00805c2684906538.001.1,2022-10-16T21:56:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cae03b9c4cd63d30cfef4a989ebc27607959ad39.001.1,2022-10-16T09:59:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1f63e80e76611d41f1f6bcd70130fcec6691ab29.001.1,2022-10-15T20:57:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.648dc8ed8fda42630039b00bc10d06e2e61c5c5b.001.1,2022-10-15T09:59:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b059acb6b2d81f9f1f97d5701ccfce2619b46499.001.1,2022-10-14T21:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.950039b84e14d2481b6f203926b177d25ee9fc51.001.1,2022-10-14T10:17:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e8433a8526cb7318834262b81b257c07e70cd248.001.1,2022-10-13T21:18:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.998034b1682bcf99e1efe82811883617da4d678a.001.1,2022-10-13T08:57:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.33e93ff090684f428e52f38405cf893a5c2828e4.001.1,2022-10-12T21:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8e230f42b9ab595ba5f350e9b9b4ccfff5855680.001.1,2022-10-12T09:23:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.82604495244d36ed3dcc010c82bd27f2666124b9.001.1,2022-10-11T21:33:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e99b8324f3f9305d92e5d48a357d09fdd767884d.001.1,2022-10-11T09:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.af41ee0da3834506e4ffc43603d010f01013a7fd.001.1,2022-10-10T21:09:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e7948b43bf39ee3dfc7818032ea14ac4e9da763d.001.1,2022-10-10T10:46:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.99fb2561faf28e7c2f0c81a58484d315bb7a8f51.001.1,2022-10-09T21:13:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84c3e9b39204154241e035c0ad596fb40aae5cb8.001.1,2022-10-09T10:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9f86a916bcf50042d955842487ed9cd048aefc87.001.1,2022-10-08T22:02:28-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e58e5c27e7b4f90dbed01f89f13591a2ecc21ee8.001.1,2022-10-08T11:24:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.ecf165bd66629f7db463d82802352b1be1011ccc.001.1,2022-10-07T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.e52eb824ab141059123d831f42b88443370215f8.001.1,2022-10-07T10:48:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.51535d52bdb5ca9f7517becb7a87457ec023feb8.001.1,2022-10-06T21:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.753024c47732e99acf9a150bed0c5d7ec8a3ef16.001.1,2022-10-06T10:16:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1d52ab865ec81e671dba05b6beda4edb054a045e.001.1,2022-10-05T21:35:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.806f23badda5c974582168bda3d77935ebf87b1a.001.1,2022-10-05T09:04:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0ef7148e1d5dfb2b4a228a7f37fb5a89e39e3a24.001.1,2022-10-05T09:07:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d0347de831cf12a41a44847fb077661807487b9c.001.1,2022-10-04T22:20:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.169f5d074761cbbfb4c1769f897e71f63486e6a7.001.1,2022-10-04T09:40:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.1ca22e78fd85f379b6330ea38b1d09d94f5c1cb4.001.1,2022-10-03T21:15:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.9a95debb4b1f30c8803546461f27bede3d01fe54.001.1,2022-10-03T11:19:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.39483713757044c9be2968021c33ba352ea7b633.001.1,2022-10-02T21:05:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.fb1b6ef43cc506ac737152c890117573ef50defe.001.1,2022-10-02T09:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.3c28e9fc687c651dd1c99a8d050585decfae28fe.001.1,2022-10-01T20:53:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4a60d2aa6d8997e9f78aea803367a4c7d4a586f1.001.1,2022-10-01T10:41:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0fbe182f59278bf4d5796b810af5b8eddd043f6d.001.1,2022-09-30T21:45:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.65f797997aa46f0aea23fba18e6db27016a49b98.001.1,2022-09-30T10:45:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.904eec5700f67fa0d319d1cc3fdb62d190a392cf.001.1,2022-09-29T22:08:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a5d0ec7556ab4d95df8ef7de38cb9146893dbc41.001.1,2022-09-29T16:10:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.84a3666c2c0c33069bdfe7ba4ae971b2b0944c5f.001.1,2022-09-29T10:32:00-04:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.5cd2b4514e2e65ca6a535ac6485c8d907b603736.001.1,2022-09-29T04:20:00-04:00"
                             ]
                         }
                     }
                 }
             ],
             "title": "current watches, warnings, and advisories for 29.008056 N, 81.382778 W",
-            "updated": "2022-10-17T15:00:00+00:00"
+            "updated": "2022-10-18T02:15:23+00:00"
         }
-  recorded_at: Mon, 17 Oct 2022 21:20:38 GMT
+  recorded_at: Tue, 18 Oct 2022 06:03:43 GMT
 recorded_with: VCR 6.1.0
