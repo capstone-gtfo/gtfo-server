@@ -195,7 +195,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -221,14 +221,96 @@
         "lines": [
           1,
           1,
+          4,
+          4,
+          2,
+          null,
           2,
           2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/spec/requests/api/v1/weather_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
           1,
           null,
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/spec/services/NWS_service_spec.rb": {
+        "lines": [
+          1,
           null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -238,20 +320,20 @@
           1,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
           null,
-          2,
+          5,
           null,
-          null,
-          1,
           null,
           1,
-          2,
+          null,
+          1,
+          5,
           null,
           null
         ]
@@ -262,19 +344,68 @@
           1,
           null,
           1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/controllers/api/v1/weather_controller.rb": {
+        "lines": [
           1,
           1,
+          2,
+          2,
+          null,
+          2,
           1,
+          null,
           1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/controllers/application_controller.rb": {
+        "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/serializer/nws_serializer.rb": {
+        "lines": [
           1,
+          null,
           1,
+          null,
           1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1666112038
+    "timestamp": 1666112830
   }
 }

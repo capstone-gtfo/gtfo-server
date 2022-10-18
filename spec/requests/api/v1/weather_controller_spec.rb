@@ -21,4 +21,15 @@ RSpec.describe 'disaster request' do
         expect(forecast[:data].first[:attributes]).to have_key(:headline)
         expect(forecast[:data].first[:attributes]).to have_key(:description)
     end
+
+    it 'no disaster path', :vcr do
+        get '/api/v1/disasters?lat=33.2896&long=-97.6982'
+
+        expect(response).to be_successful
+        
+        forecast = JSON.parse(response.body, symbolize_names: true)
+         
+        expect(forecast).to be_a Hash
+        expect(forecast[:data]).to eq([])
+    end
 end
