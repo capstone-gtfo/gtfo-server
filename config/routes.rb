@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      get '/disasters', to: 'NWS#index'
+      get '/disasters', to: 'weather#index'
     end
   end
 end

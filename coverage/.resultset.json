@@ -195,7 +195,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -208,6 +208,29 @@
         "lines": [
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/controllers/api/v1/weather_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -263,8 +286,17 @@
           null,
           null
         ]
+      },
+      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/serializer/nws_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1666047496
+    "timestamp": 1666062924
   }
 }
