@@ -5,7 +5,7 @@ class NWSSerializer
         data:  weather.map do |x| 
         {
             id: nil,   
-            type: x.type,
+            type: "disaster",
             attributes: {
                 areas: x.areas,
                 coordinates: x.coordinates,

@@ -11,7 +11,7 @@ RSpec.describe 'disaster request' do
         expect(forecast).to be_a Hash
         
         expect(forecast[:data].first[:id]).to eq(nil)
-        expect(forecast[:data].first[:type]).to eq("Flood Warning")
+        expect(forecast[:data].first[:type]).to eq("disaster")
         expect(forecast[:data].first[:attributes]).to have_key(:areas)
         expect(forecast[:data].first[:attributes]).to have_key(:coordinates)
         expect(forecast[:data].first[:attributes]).to have_key(:type)
