@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=33.2896,-97.6982&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/geo+json
+      Last-Modified:
+      - Sat, 15 Oct 2022 22:30:00 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      X-Request-Id:
+      - 1cba4e5f-34d5-4ab5-81c9-c734bf433990
+      X-Correlation-Id:
+      - 9bb24fc
+      X-Server-Id:
+      - vm-bldr-nids-apiapp6.ncep.noaa.gov
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=28, s-maxage=30
+      Expires:
+      - Tue, 18 Oct 2022 16:47:12 GMT
+      Date:
+      - Tue, 18 Oct 2022 16:46:44 GMT
+      Content-Length:
+      - '233'
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 460e590
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "@context": {
+                "@version": "1.1"
+            },
+            "type": "FeatureCollection",
+            "features": [],
+            "title": "current watches, warnings, and advisories for 33.2896 N, 97.6982 W",
+            "updated": "2022-10-15T22:30:00+00:00"
+        }
+  recorded_at: Tue, 18 Oct 2022 16:46:44 GMT
+recorded_with: VCR 6.1.0
