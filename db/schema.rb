@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 2022_10_14_024652) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.integer "phone_number"
-    t.integer "latitude"
-    t.integer "longitude"
+    t.string "phone"
+    t.string "lat"
+    t.string "long"
   end
 
 end
