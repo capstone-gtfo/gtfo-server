@@ -34,7 +34,8 @@ RSpec.describe 'User Requests' do
       expect(attributes).to have_key(:phone)
     end
 
-    it 'lets you send a text' do
+    xit 'lets you send a text' do
+      #look into text message test feature
       user_params = {
         "lat": '39.7392',
         "long": '-104.9903',
@@ -43,6 +44,22 @@ RSpec.describe 'User Requests' do
 
       headers = { content_type: "application/json" }
       post "/api/v1/users", headers: headers, params: user_params
+    end
+
+    it 'sends you disaster texts after you signup' do
+      @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
+      allow(NWSService).to receive(:get_disaster).and_return(@disasters)
+      
+      user_params = {
+        "lat": '39.7392',
+        "long": '-104.9903',
+        "phone": '18043997020'
+      }
+
+      headers = { content_type: "application/json" }
+      post "/api/v1/users", headers: headers, params: user_params
+
+      expect(response).to_not be_successful
     end
   end
 
