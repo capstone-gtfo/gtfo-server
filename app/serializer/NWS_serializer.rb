@@ -1,8 +1,6 @@
 class NWSSerializer
 
-
    def self.format_response(weather) 
-
     {
         data:  weather.map do |x| 
         {
@@ -19,7 +17,7 @@ class NWSSerializer
                 description: x.description
             }
         } 
-    end
+        end
    }
-end
+    end
 end
