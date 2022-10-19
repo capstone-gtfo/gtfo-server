@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User Requests' do
   describe 'happy path testing' do
-    it 'lets you create a user', :vcr do
+    it 'lets you create a user' do
       user_params = {
         "lat": '39.7392',
         "long": '-104.9903',
