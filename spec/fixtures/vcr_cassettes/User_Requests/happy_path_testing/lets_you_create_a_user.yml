@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json
+    body:
+      encoding: UTF-8
+      string: Body=Thanks+for+signing+up.+You+will+receive+disaster+updates+for+your+area+when+applicable.&From=%2B14057844891&To=%2B17204740636
+    headers:
+      User-Agent:
+      - twilio-ruby/5.72.1 (darwin21 x86_64) Ruby/2.7.4
+      Accept-Charset:
+      - utf-8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      Authorization:
+      - Basic QUMyOGY0NzljZjQ2MTRmYjVjNTQxZjllM2IxY2I5ZDcwYToxMTBlZjIzZTU4ZjIwYmE3MTVmMzZkZWQ5YTY5NWM5Ng==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Tue, 18 Oct 2022 23:01:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '889'
+      Connection:
+      - keep-alive
+      Twilio-Concurrent-Requests:
+      - '1'
+      Twilio-Request-Id:
+      - RQ63a12b208a67a990d7414560ea2e514b
+      Twilio-Request-Duration:
+      - '0.144'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      X-Home-Region:
+      - us1
+      X-Api-Domain:
+      - api.twilio.com
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"body": "Sent from your Twilio trial account - Thanks for signing
+        up. You will receive disaster updates for your area when applicable.", "num_segments":
+        "1", "direction": "outbound-api", "from": "+14057844891", "date_updated":
+        "Tue, 18 Oct 2022 23:01:15 +0000", "price": null, "error_message": null, "uri":
+        "/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages/SM63a12b208a67a990d7414560ea2e514b.json",
+        "account_sid": "AC28f479cf4614fb5c541f9e3b1cb9d70a", "num_media": "0", "to":
+        "+17204740636", "date_created": "Tue, 18 Oct 2022 23:01:15 +0000", "status":
+        "queued", "sid": "SM63a12b208a67a990d7414560ea2e514b", "date_sent": null,
+        "messaging_service_sid": null, "error_code": null, "price_unit": "USD", "api_version":
+        "2010-04-01", "subresource_uris": {"media": "/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages/SM63a12b208a67a990d7414560ea2e514b/Media.json"}}'
+  recorded_at: Tue, 18 Oct 2022 23:01:15 GMT
+- request:
+    method: get
+    uri: https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=39.7392,-104.9903&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/geo+json
+      Last-Modified:
+      - Wed, 12 Oct 2022 00:00:00 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      X-Request-Id:
+      - 9cd2673b-43cf-4d12-b708-fa5f0d166520
+      X-Correlation-Id:
+      - 9644d03
+      X-Server-Id:
+      - vm-bldr-nids-apiapp1.ncep.noaa.gov
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=30, s-maxage=30
+      Expires:
+      - Tue, 18 Oct 2022 23:01:45 GMT
+      Date:
+      - Tue, 18 Oct 2022 23:01:15 GMT
+      Content-Length:
+      - '234'
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 5aba7e0
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "@context": {
+                "@version": "1.1"
+            },
+            "type": "FeatureCollection",
+            "features": [],
+            "title": "current watches, warnings, and advisories for 39.7392 N, 104.9903 W",
+            "updated": "2022-10-12T00:00:00+00:00"
+        }
+  recorded_at: Tue, 18 Oct 2022 23:01:15 GMT
+recorded_with: VCR 6.1.0
