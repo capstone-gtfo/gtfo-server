@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'disaster request' do
-    it 'gets response with disaster information', :vcr do
+    xit 'gets response with disaster information', :vcr do
         get '/api/v1/disasters?lat=29.008056&long=-81.382778'
         
         expect(response).to be_successful
@@ -23,15 +23,31 @@ RSpec.describe 'disaster request' do
         expect(forecast[:data].first[:attributes]).to have_key(:description)
     end
 
-    it 'no disaster path', :vcr do
+    xit 'no disaster path', :vcr do
         get '/api/v1/disasters?lat=33.2896&long=-97.6982'
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
         
         forecast = JSON.parse(response.body, symbolize_names: true)
+        
+        expect(forecast.count).to eq(1)
          
         expect(forecast).to be_a Hash
         expect(forecast[:data]).to eq([])
+    end
+
+    it 'sad path - bad coordinates', :vcr do
+        get '/api/v1/disasters?lat=33.2896&long=33.2896'
+
+        expect(response).to_not be_successful
+        expect(response.status).to eq(400)
+        
+        forecast = JSON.parse(response.body, symbolize_names: true)
+        
+        expect(forecast.count).to eq(1)
+        
+        expect(forecast).to be_a Hash
+        expect(forecast[:error]).to eq("Invalid Coordinates: weather retrieval failed")
     end
 end

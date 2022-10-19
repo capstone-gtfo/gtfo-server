@@ -221,13 +221,14 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          null,
-          2,
+          1,
+          1,
+          1,
+          0,
+          1,
           1,
           null,
-          1,
+          0,
           null,
           null,
           null
@@ -243,12 +244,14 @@
         "lines": [
           1,
           1,
-          2,
-          2,
           1,
+          1,
+          1,
+          0,
+          0,
           null,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           null,
@@ -260,32 +263,6 @@
           1,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/poros/disaster.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -293,37 +270,18 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/maryturpin/turing/4Module/projects/stayOrGo-server/app/serializer/nws_serializer.rb": {
-        "lines": [
           1,
+          null,
           null,
           1,
           null,
           1,
-          null,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1666211473
+    "timestamp": 1666212815
   }
 }
