@@ -50,4 +50,18 @@ RSpec.describe 'disaster request' do
         expect(forecast).to be_a Hash
         expect(forecast[:error]).to eq("Invalid Coordinates: weather retrieval failed")
     end
+
+    it 'sad path - invalid coordinates', :vcr do
+        get '/api/v1/disasters?lat=sfv&long=sdfs'
+
+        expect(response).to_not be_successful
+        expect(response.status).to eq(400)
+        
+        forecast = JSON.parse(response.body, symbolize_names: true)
+        
+        expect(forecast.count).to eq(1)
+        
+        expect(forecast).to be_a Hash
+        expect(forecast[:error]).to eq("Invalid Coordinates: weather retrieval failed")
+    end
 end
