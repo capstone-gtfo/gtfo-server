@@ -1,6 +1,6 @@
-module Textable 
+class TwilioFacade
     def self.welcome_sms_response(phone_number)
-        client = Twilio::REST::Client.new(ENV['twilio_sid'], ENV['twilio_auth_token'])
+        client = TwilioService.conn
         client.messages.create(
             body: 'Thanks for signing up. You will receive disaster updates for your area when applicable.',
             from: '+14057844891',
@@ -9,7 +9,7 @@ module Textable
     end 
 
     def self.disaster_sms_response(events, phone_number)
-        client = Twilio::REST::Client.new(ENV['twilio_sid'], ENV['twilio_auth_token'])
+        client = TwilioService.conn
         events.each do |event|
             client.messages.create(
                 body: "#{event.type}: #{event.headline}",
