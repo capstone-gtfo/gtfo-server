@@ -4,9 +4,9 @@ class Api::V1::WeatherController < ApplicationController
         data = NWSFacade.retrieve_disaster(location)
  
         if data == []
-            render json: {data: []}
+            render json: {data: []}, status: 200
         else
-            render json: NWSSerializer.format_response(data)
+            render json: NWSSerializer.format_response(data), status: 200
         end
     end
 end

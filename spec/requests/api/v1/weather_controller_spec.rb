@@ -5,6 +5,7 @@ RSpec.describe 'disaster request' do
         get '/api/v1/disasters?lat=29.008056&long=-81.382778'
         
         expect(response).to be_successful
+        expect(response.status).to eq(200)
 
         forecast = JSON.parse(response.body, symbolize_names: true)
         
@@ -26,6 +27,7 @@ RSpec.describe 'disaster request' do
         get '/api/v1/disasters?lat=33.2896&long=-97.6982'
 
         expect(response).to be_successful
+        expect(response.status).to eq(200)
         
         forecast = JSON.parse(response.body, symbolize_names: true)
          
