@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe TwilioFacade do
+RSpec.describe 'TwilioFacade' do
     it 'populates the disaster poro' do
         disasters = JSON.parse(File.read('spec/fixtures/disasters_2.json'), symbolize_names: true)
         events = [Disaster.new(disasters)]

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe NWSFacade do
+RSpec.describe 'NWSFacade' do
     it 'populates the disaster poro' do
         @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
         allow(NWSService).to receive(:get_disaster).and_return(@disasters)

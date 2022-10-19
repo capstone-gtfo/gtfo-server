@@ -45,7 +45,7 @@ RSpec.describe 'User Requests' do
       post "/api/v1/users", headers: headers, params: user_params
     end
 
-    it 'sends you disaster texts after you signup' do # used to test initial text disaster api call / text feature
+    xit 'sends you disaster texts after you signup' do # used to test initial text disaster api call / text feature
       @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
       allow(NWSService).to receive(:get_disaster).and_return(@disasters)
       

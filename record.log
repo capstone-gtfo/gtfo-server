@@ -4,10 +4,6 @@
 [webmock] Identified request type (recordable) for [post https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json]
 [webmock] Handling request: [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=39.7392,-104.9903&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected] (disabled: false)
 [webmock] Identified request type (recordable) for [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=39.7392,-104.9903&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected]
-[webmock] Handling request: [post https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json] (disabled: false)
-[webmock] Identified request type (recordable) for [post https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json]
-[webmock] Handling request: [post https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json] (disabled: false)
-[webmock] Identified request type (recordable) for [post https://api.twilio.com/2010-04-01/Accounts/AC28f479cf4614fb5c541f9e3b1cb9d70a/Messages.json]
 [webmock] Handling request: [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=33.2896,33.2896&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected] (disabled: false)
 [webmock] Identified request type (recordable) for [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=33.2896,33.2896&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected]
 [webmock] Handling request: [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=sfv,sdfs&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected] (disabled: false)
