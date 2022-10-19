@@ -18,7 +18,7 @@ class NWSFacade
             events = weather_events[:features].map do |alert|
                 Disaster.new(alert)
             end
-            Textable.disaster_sms_response(events, phone_number)
+            TwilioFacade.disaster_sms_response(events, phone_number)
         end
     end
 end

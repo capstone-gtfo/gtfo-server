@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'disaster request' do
-    xit 'gets response with disaster information', :vcr do
+    it 'gets response with disaster information' do
+        @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
+        allow(NWSService).to receive(:get_disaster).and_return(@disasters)
+
         get '/api/v1/disasters?lat=29.008056&long=-81.382778'
         
         expect(response).to be_successful
@@ -23,7 +26,10 @@ RSpec.describe 'disaster request' do
         expect(forecast[:data].first[:attributes]).to have_key(:description)
     end
 
-    xit 'no disaster path', :vcr do
+    it 'no disaster path' do
+        @no_disasters = JSON.parse(File.read('spec/fixtures/no_disaster_data.json'), symbolize_names: true)
+        allow(NWSService).to receive(:get_disaster).and_return(@no_disasters)
+
         get '/api/v1/disasters?lat=33.2896&long=-97.6982'
 
         expect(response).to be_successful
@@ -37,7 +43,7 @@ RSpec.describe 'disaster request' do
         expect(forecast[:data]).to eq([])
     end
 
-    it 'sad path - bad coordinates', :vcr do
+    it 'sad path - bad coordinates' do
         get '/api/v1/disasters?lat=33.2896&long=33.2896'
 
         expect(response).to_not be_successful
@@ -51,7 +57,7 @@ RSpec.describe 'disaster request' do
         expect(forecast[:error]).to eq("Invalid Coordinates: weather retrieval failed")
     end
 
-    it 'sad path - invalid coordinates', :vcr do
+    it 'sad path - invalid coordinates' do
         get '/api/v1/disasters?lat=sfv&long=sdfs'
 
         expect(response).to_not be_successful
