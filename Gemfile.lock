@@ -98,10 +98,8 @@ GEM
     minitest (5.16.3)
     msgpack (1.6.0)
     nio4r (2.5.8)
-    nokogiri (1.13.8)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.1)
@@ -164,17 +162,17 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.1)
-    rubocop (1.36.0)
+    rubocop (1.37.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.20.1, < 2.0)
+      rubocop-ast (>= 1.22.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.21.0)
+    rubocop-ast (1.22.0)
       parser (>= 3.1.1.0)
     rubocop-rails (2.16.1)
       activesupport (>= 4.2.0)
@@ -204,7 +202,7 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.1)
     thread_safe (0.3.6)
-    twilio-ruby (5.72.1)
+    twilio-ruby (5.73.0)
       faraday (>= 0.9, < 3.0)
       jwt (>= 1.5, <= 2.5)
       nokogiri (>= 1.6, < 2.0)
@@ -222,7 +220,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-darwin-21
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -253,4 +250,4 @@ RUBY VERSION
    ruby 2.7.4p191
 
 BUNDLED WITH
-   2.3.19
+   2.1.4
