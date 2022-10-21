@@ -29,14 +29,14 @@ jobs:
           password: $DOCKERHUB_PASSWORD
         environment: # add POSTGRES environment variables.
           POSTGRES_USER: test
-          POSTGRES_DB: gtfo-server_test
+          POSTGRES_DB: gtfo-server
           POSTGRES_PASSWORD: ""
     # environment variables specific to Ruby/Rails, applied to the primary container.
     environment:
       BUNDLE_JOBS: "3"
       BUNDLE_RETRY: "3"
       PGHOST: 127.0.0.1
-      PGUSER: gtfo-server_test
+      PGUSER: gtfo-server
       PGPASSWORD: ""
       RAILS_ENV: test
 
