@@ -8,3 +8,5 @@
 [webmock] Identified request type (recordable) for [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=33.2896,33.2896&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected]
 [webmock] Handling request: [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=sfv,sdfs&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected] (disabled: false)
 [webmock] Identified request type (recordable) for [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=sfv,sdfs&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected]
+[webmock] Handling request: [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=29.008056,-81.382778&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected] (disabled: false)
+[webmock] Identified request type (recordable) for [get https://api.weather.gov/alerts/active?certainty=Observed,Likely&point=29.008056,-81.382778&severity=Extreme,Severe&status=actual&urgency=Immediate,Expected]

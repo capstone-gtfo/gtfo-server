@@ -70,4 +70,12 @@ RSpec.describe 'disaster request' do
         expect(forecast).to be_a Hash
         expect(forecast[:error]).to eq("Invalid Coordinates: weather retrieval failed")
     end
+
+    it 'test' do
+        get '/api/v1/disasters?lat=29.008056&long=-81.382778'
+         
+        expect(response).to be_successful
+        expect(response.status).to eq(200)
+
+    end
 end
