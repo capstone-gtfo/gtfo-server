@@ -9,7 +9,7 @@ jobs: # a collection of steps
         environment: # environment variables for primary container
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
-          BUNDLE_PATH: vendor/bundle
+            BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
           PGUSER: postgres
           RAILS_ENV: test
