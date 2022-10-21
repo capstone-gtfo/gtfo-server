@@ -5,6 +5,7 @@ orbs:
 # Define the jobs we want to run for this project
 jobs:
   build:
+    working_directory: ~/stayOrGo-server
     docker:
       - image: cimg/ruby:2.7.4-node # use a tailored CircleCI docker image.
         auth:
