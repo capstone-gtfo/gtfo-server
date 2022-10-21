@@ -1,6 +1,6 @@
-class NWSFacade
+class NwsFacade
     def self.retrieve_disaster(location)
-        weather_events = NWSService.get_disaster(location)
+        weather_events = NwsService.get_disaster(location)
         if weather_events[:status] == 400
             return 400
         elsif weather_events[:features].empty? == true
@@ -13,7 +13,7 @@ class NWSFacade
     end
 
     def self.retrieve_disaster_sms(location, phone_number)
-        weather_events = NWSService.get_disaster(location)
+        weather_events = NwsService.get_disaster(location)
         if weather_events[:features].empty? == false 
             events = weather_events[:features].map do |alert|
                 Disaster.new(alert)

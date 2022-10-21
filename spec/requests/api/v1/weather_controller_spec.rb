@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'disaster request' do
     it 'gets response with disaster information' do
         @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
-        allow(NWSService).to receive(:get_disaster).and_return(@disasters)
+        allow(NwsService).to receive(:get_disaster).and_return(@disasters)
 
         get '/api/v1/disasters?lat=29.008056&long=-81.382778'
         
@@ -28,7 +28,7 @@ RSpec.describe 'disaster request' do
 
     it 'no disaster path' do
         @no_disasters = JSON.parse(File.read('spec/fixtures/no_disaster_data.json'), symbolize_names: true)
-        allow(NWSService).to receive(:get_disaster).and_return(@no_disasters)
+        allow(NwsService).to receive(:get_disaster).and_return(@no_disasters)
 
         get '/api/v1/disasters?lat=33.2896&long=-97.6982'
 

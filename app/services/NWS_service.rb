@@ -1,4 +1,4 @@
-class NWSService
+class NwsService
  
     def self.get_disaster(location)
         response = conn.get("/alerts/active") do |faraday|

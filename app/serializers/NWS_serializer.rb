@@ -1,4 +1,4 @@
-class NWSSerializer
+class NwsSerializer
 
    def self.format_response(weather) 
     {
