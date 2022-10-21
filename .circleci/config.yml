@@ -28,7 +28,7 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
         environment: # add POSTGRES environment variables.
-          POSTGRES_USER: test
+          POSTGRES_USER: gtfo-server
           POSTGRES_DB: gtfo-server
           POSTGRES_PASSWORD: ""
     # environment variables specific to Ruby/Rails, applied to the primary container.
