@@ -62,7 +62,9 @@ jobs:
       - run:
           name: Database setup
           command: bin/rails db:{create,migrate} --trace
-      - ruby/rspec-test
+      - run:
+          name: test
+          command: bundle exec rspec
       - store_test_results:
           path: test-results
 # We use workflows to orchestrate the jobs that we declared above.
