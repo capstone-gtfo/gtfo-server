@@ -20,10 +20,7 @@ jobs:
     parallelism: 3
     # here we set TWO docker images.
     docker:
-      - image: jruby:9.3
-    steps:
-      - run: sudo apt-get update && sudo apt-get install -y git sudo tar
-      - checkout
+      - image: cimg/ruby:2.7.4-node
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
