@@ -10,7 +10,12 @@
 * [Project Specs](#Project-Specs)
 
 ### Introduction
-Ruby on Rails Backend Application (more to come)
+Welcome to the server side of the stayOrGo capstone project. Our goal with project on our server was:
+- To consume the National Weather Service api and return cleaned up data to our client side
+- Accept user information including phone number and location data from our client side and store it in a database
+- Return text messages to a user's phone based on whether or not a disaster is occuring in their geographic location
+
+** Please note as this is a demo using a free Twilio account our website will only accept phone numbers that we have verified **
 
 ### API Endpoints
 * POST https://stay-or-go-server.herokuapp.com/api/v1/users - *creates a user*
@@ -29,7 +34,7 @@ Must be in the following format:
 Must be in the following format:
 * https://stay-or-go-server.herokuapp.com/api/v1/disasters?lat=33.2896&long=-97.6982
 
-**Returns the following**
+**Returns the following when disaster is occuring in the area**
 ```JSON
 {"data": [
     {"id": "2",
@@ -105,6 +110,12 @@ Must be in the following format:
         }
     }
 ]
+}
+```
+**Returns the following when no disaster is occuring**
+```JSON
+{
+    "data": []
 }
 ```
 
