@@ -1,16 +1,15 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@1.8.0
-
 # Define the jobs we want to run for this project
 jobs:
   build:
     working_directory: ~/stayOrGo-server
     docker:
       - image: cimg/ruby:2.7.4-node # use a tailored CircleCI docker image.
-    auth:
-      username: mydockerhub-user
-      password: $DOCKERHUB_PASSWORD
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout # pull down our git code.
       - ruby/install-deps # use the ruby orb to install dependencies
@@ -40,7 +39,6 @@ jobs:
       PGUSER: gtfo-server
       PGPASSWORD: ""
       RAILS_ENV: test
-
     steps:
       - checkout
       - ruby/install-deps
