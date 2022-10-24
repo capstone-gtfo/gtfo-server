@@ -8,6 +8,7 @@
 * [Contributors](#Contributors)
 * [Sources](#Sources)
 * [Project Specs](#Project-Specs)
+* [CircleCi](#CircleCi)
 
 ### Introduction
 Welcome to the server side of the stayOrGo capstone project. Our goal with project on our server was:
@@ -163,6 +164,9 @@ bundle exec rspec spec
 ```
 
 Simplecov will display total test coverage when running the test suite. You can find a more detailed report by running:  open coverage/index.html
+
+###CircleCi
+We had some issues setting up continuous integration using the circleci service. We've narrowed the issue doen to either an issue with how our NWS_Service is interacting with circleci or an issue with our docker images how it interacts with our orb and dependencies. 
 
 #### Contributors
 Tyler Caudill  
