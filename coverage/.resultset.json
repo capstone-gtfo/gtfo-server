@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/environment.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/application.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/application.rb": {
         "lines": [
           1,
           null,
@@ -49,7 +49,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/boot.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -57,7 +57,7 @@
           1
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/environments/test.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -107,7 +107,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/application_controller_renderer.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -119,7 +119,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/backtrace_silencers.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -130,7 +130,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/cors.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -150,7 +150,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/filter_parameter_logging.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -158,7 +158,7 @@
           1
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/inflections.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -178,7 +178,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/mime_types.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -186,7 +186,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/initializers/wrap_parameters.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -204,7 +204,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/config/routes.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -218,7 +218,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/facades/twilio_facade_spec.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/facades/twilio_facade_spec.rb": {
         "lines": [
           1,
           null,
@@ -236,7 +236,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/models/user_spec.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -250,7 +250,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/models/user.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -259,216 +259,14 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/models/application_record.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/requests/api/v1/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/requests/api/v1/weather_controller_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/services/nws_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/spec/services/twilio_service_spec.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/requests/api/v1/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -478,10 +276,212 @@
           null,
           1,
           null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/services/nws_service.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/requests/api/v1/weather_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/services/NWS_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/spec/services/twilio_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/services/nws_service.rb": {
         "lines": [
           1,
           null,
@@ -504,7 +504,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/facades/nws_facade.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/facades/nws_facade.rb": {
         "lines": [
           1,
           1,
@@ -532,7 +532,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/poros/disaster.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/poros/disaster.rb": {
         "lines": [
           1,
           1,
@@ -550,7 +550,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/facades/twilio_facade.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/facades/twilio_facade.rb": {
         "lines": [
           1,
           1,
@@ -575,7 +575,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/services/twilio_service.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/services/twilio_service.rb": {
         "lines": [
           1,
           1,
@@ -584,7 +584,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/controllers/api/v1/users_controller.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -616,13 +616,13 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/controllers/application_controller.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/serializers/user_serializer.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/serializers/user_serializer.rb": {
         "lines": [
           1,
           1,
@@ -631,7 +631,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/controllers/api/v1/weather_controller.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/controllers/api/v1/weather_controller.rb": {
         "lines": [
           1,
           1,
@@ -648,7 +648,7 @@
           null
         ]
       },
-      "/Users/jonathanpope/turing/4mod/gtfo-server/app/serializers/nws_serializer.rb": {
+      "/Users/nickjones/Turing/4Module/projects/capstone/stayOrGo-server/app/serializers/nws_serializer.rb": {
         "lines": [
           1,
           null,
@@ -676,6 +676,6 @@
         ]
       }
     },
-    "timestamp": 1666222275
+    "timestamp": 1666298346
   }
 }
