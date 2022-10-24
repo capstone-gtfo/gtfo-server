@@ -8,9 +8,9 @@ jobs:
     working_directory: ~/stayOrGo-server
     docker:
       - image: cimg/ruby:2.7.4-node # use a tailored CircleCI docker image.
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD
+    auth:
+      username: mydockerhub-user
+      password: $DOCKERHUB_PASSWORD
     steps:
       - checkout # pull down our git code.
       - ruby/install-deps # use the ruby orb to install dependencies
