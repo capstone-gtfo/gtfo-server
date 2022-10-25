@@ -14,13 +14,16 @@ class TwilioFacade
     
 
     def self.disaster_sms_response(events, phone_number)
-        client = TwilioService.conn
-        events.each do |event|
-            client.messages.create(
-                body: "#{event.type}: #{event.headline}",
-                from: '+14057844891',
-                to: "+#{phone_number}"
-            )
-        end 
+        begin
+            client = TwilioService.conn
+            events.each do |event|
+                client.messages.create(
+                    body: "#{event.type}: #{event.headline}",
+                    from: '+14057844891',
+                    to: "+#{phone_number}"
+                )
+            end 
+        rescue Twilio::REST::RestError => e
+        end   
     end 
 end 
