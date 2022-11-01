@@ -34,11 +34,11 @@ RSpec.describe 'User Requests' do
       expect(attributes).to have_key(:phone)
     end
 
-    xit 'lets you send a text' do #used to test initial sign up text 
+    xit 'lets you send a text' do #used to test initial sign up text
       user_params = {
         "lat": '39.7392',
         "long": '-104.9903',
-        "phone": '17204740636'
+        "phone": '18477158658'
       }
 
       headers = { content_type: "application/json" }
@@ -48,7 +48,7 @@ RSpec.describe 'User Requests' do
     xit 'sends you disaster texts after you signup' do # used to test initial text disaster api call / text feature
       @disasters = JSON.parse(File.read('spec/fixtures/disaster_data.json'), symbolize_names: true)
       allow(NWSService).to receive(:get_disaster).and_return(@disasters)
-      
+
       user_params = {
         "lat": '39.7392',
         "long": '-104.9903',
@@ -64,7 +64,7 @@ RSpec.describe 'User Requests' do
     xit 'sends you disaster texts after you signup' do #data used to test recurring API call / text warning pattern
       user1 = User.create!(lat: '29.008056', long: '-81.382778', phone: '18043997020')
       user2 = User.create!(lat: '29.008056', long: '-81.382778', phone: '17204740636')
-      
+
       get '/api/v1/texts'
     end
   end

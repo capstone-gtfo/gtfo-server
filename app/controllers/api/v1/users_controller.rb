@@ -18,7 +18,7 @@ class Api::V1::UsersController < ApplicationController
     TwilioFacade.welcome_sms_response(user.phone)
     location = "#{user.lat},#{user.long}"
     NWSFacade.retrieve_disaster_sms(location, user.phone)
-  end 
+  end
 
   private
 

@@ -9,9 +9,11 @@ class TwilioFacade
                             )
         rescue Twilio::REST::RestError => e
             return "Can't register for SMS"
+            UserMailer.invalid_sms.deliver_now
+            # Method to delete that user
         end
-    end 
-    
+    end
+
 
     def self.disaster_sms_response(events, phone_number)
         begin
@@ -22,8 +24,8 @@ class TwilioFacade
                     from: '+14057844891',
                     to: "+#{phone_number}"
                 )
-            end 
+            end
         rescue Twilio::REST::RestError => e
-        end   
-    end 
-end 
+        end
+    end
+end
